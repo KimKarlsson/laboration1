@@ -19,6 +19,40 @@
             <li><a href="kontakt.html">Kontakter</a></li>
         </ul>
 
+    <h3>OBS, detta är ett påhittat kontaktforum.</h3>
+
+        <form method="post" action="mailto:http://webproduction.standout.se/form.php">
+          <fieldset>
+           <legend>Fråga</legend>
+           
+           <label>Ärendetyp
+             <select Ärende="ärende">
+                <option value="fraga">Fråga</option>
+                <option value="hur">Hur</option>
+                <option value="när">När</option>
+                <option value="var">Var</option>
+             </select>
+           </label><br />
+           <label>Rubrik: 
+            <input type="text" value="Vad göra?" class="text" name="vad göra?" size="20" />
+           </label><br />
+           <label>Fråga:
+            <textarea name="meddelande" id="meddelande" cols="20" rows="1"></textarea>   
+           </label>
+          </fieldset> 
+          
+          <fieldset>
+           <legend>Information om dig</legend>  
+            <label>Kontakta mig via mail
+             <input type="radio" name="mail" value="mail" checked><br /> 
+            </label>
+            <label>Kontakta mig via röksignal
+             <input type="radio" name="eld" value="eld"><br />   
+            </label>
+          </fieldset>
+<!-- inte helt säker på hur submiten funkar. om sidan ska ladda om och om mailto är rätt-->
+          <input type="submit" value="Skicka frågan"><br />
+        </form>
    
 </body>
 </html>
