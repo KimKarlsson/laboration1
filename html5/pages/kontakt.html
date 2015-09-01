@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Kontaket</title>
+    <title>Kontakt</title>
 </head>
 
 <body>
@@ -27,37 +27,35 @@
             <legend>Fråga</legend>
 
             <label>Ärendetyp
-                <select Ärende="ärende">
-                    <option value="fraga">Fråga</option>
+                <select name="errand">
+                    <option value="fråga">Fråga</option>
                     <option value="hur">Hur</option>
                     <option value="när">När</option>
                     <option value="var">Var</option>
                 </select>
             </label>
             <br />
+            
             <label>Rubrik:
-    <!-- gör så texten försvinner, samt att markören hamnar i rutan-->
-                <input type="text" value="Vad göra?" class="text" name="vad göra?" size="20" />
+                <input type="text" value="Vad göra?" class="text" name="title" size="20" />
             </label>
             <br />
-            <label>Fråga:                                               <!--antal rader-->
-                <textarea name="meddelande" id="meddelande" cols="20" rows="1"></textarea>
+            <label>Fråga:                                           
+                <textarea name="question" cols="20" rows="2"></textarea>
             </label>
         </fieldset>
 
         <fieldset>
             <legend>Information om dig</legend>
-            <label>Kontakta mig via mail
-                <input type="radio" name="mail" value="mail" checked>
+            <label>
+                Kontakta mig via mail<input type="checkbox" name="contacs[]" value="mail">
                 <br />
             </label>
-            <label>Kontakta mig via röksignal
-            <!-- radio verkade inte fungera -->
-                <input type="radio" name="eld" value="eld">
+            <label>
+                Kontakta mig via telefon<input type="checkbox" name="contact[]" value="telefon">
                 <br />
             </label>
         </fieldset>
-        <!-- sidan laddar inte om som den ska-->
         <input type="submit" value="Skicka frågan">
         <br />
     </form>
