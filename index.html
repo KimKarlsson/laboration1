@@ -8,127 +8,103 @@
 </head>
 
 <body>
-
-    <img src="pics/log.png" id="log" alt="logga">
-
-    <h1>Kims fantastiska sida</h1>
-
-    <p>Välkommen hit</p>
-
-    <ul>
-        <li><a href="index.html">Start</a></li>
-        <li><a href="html5/pages/laborationer.html">Laborationer</a></li>
-        <li><a href="html5/pages/presentation.html">Prestenationer</a></li>
-        <li><a href="html5/pages/kontakt.html">Kontakt</a></li>
-    </ul>
-
-    <h1>Kursblogg</h1>
-
-    <h2>Laboration 1</h2>
-
-    <h3>It's alive</h3>
-
-    <p>Nu är det igång! </p>
-    <p>Uppdateringar kommer innom kort!</p>
-    <p>Gå direkt till:<a href="html5/pages/laborationer.html#labb1"> Laborationsportalen</a>.</p>
-    <p>Yours truly: Kim. 2015-08-27</p>
-    <hr>
-
-    <h3 id="1.1">Uppgift 1.1 – Utvecklingsmiljön</h3>
-    <p>-Bekanta sig med den utvecklingsmiljö som ska användas</p>
-    <ul>
-        <li><a href="https://c9.io">Cloud9</a></li>
-        <li><a href="https://github.com">GitHub</a></li>
-    </ul>
-    <p>Jag hade ingen tidigare efarenhet av Cloud9 och något begränsad erfarenhet av Github.
-        <br> Mitt första intryck var endå gott.
-        <br> Jag har upplevt flera possitiva fördelar med att arbeta i en molnbaserad miljö
-
-        <p>Posted 2015-09-01</p>
-        <hr>
-
-        <h3 id="1.2">Uppgift 1.2 – Ett första dokument</h3>
-        <p>-Skapa ett första html-dokument <a href="html5/pages/presentation.html">presentation.html</a>.</p>
-        <p>-Validera sidan med: <a href="https://validator.w3.org/">Validator.W3.org</a></p>
-        <p>Här blev det något sparsmakat med info och jag kunde ha valt att vara mer utförlig.
-            <br> Dock kände jag att just den biten riskerade att bli väldigt tidskonsumerande.
-            <br> För att kunna lägga fokus på den egentliga uppgiften blev sidan lite knapphändig.</p>
-        <p>Valideringen via "validator.W3.org" har varit ett utmärkt vektyg att ha till hands.</p>
-        <p>Posted 2015-09-01</p>
-        <hr>
-
-        <h3 id="1.3">Uppgift 1.3 – Startsidan</h3>
-        <p>-Skapa en html-sida som kallas <a href="index.html">index.html</a></p>
-        <p>-Sidan kommer att fungera som en form av blogg för att presentera uppgifter som görs i kursen</p>
-        <p>Just hur jag skulle använda mig av startsidan skapade mycket tveksamheter hos mig.
-            <br> Jag tvekade länge på hur jag skulle strukturera mitt innehåll, pga ovana.
-            <br> Däremot gav det sig då jag väl satte igång att "bara göra det".</p>
-        <p>Posted 2015-09-01</p>
-        <hr>
-
-        <h3 id="1.4">Uppgift 1.4 – Absoluta/Relativa sökvägar</h3>
-        <p>-Bekanta sig med sökvägar och länkar</p>
-        <p>Svara på uppgiften: <a href="html5/pages/laborationer.html#1.4">Uppgift 1.4</a></p>
-        <p>Posted 2015-09-01</p>
-        <hr>
-
-        <h3 id="1.5">Uppgift 1.5 – Länkar och mer listor</h3>
-        <p>-Skapa de kataloger och filer som behövs för att lösa uppgiften.</p>
-        <p>-Skapa en intern länkstruktur som länkar mellan sidorna.</p>
-        <p>-Bygg upp en struktur för "Laborationsportalen" med ankarlänkar.</p>
-        <p>Utan en tydlig bild av slutresultatet så kan små förändringar skapa mycket merarbete.
-            <br> "Har man inte jobb så skaffar man".
-            <p>
+    <div id="container">
+        <div id="header">
+            <img src="pics/log.png" id="log" alt="logga">
+            <h1>Kims fantastiska sida</h1>
+            <p>Välkommen hit</p>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="html5/pages/laborationer.html">Laborationer</a></li>
+                <li><a href="html5/pages/presentation.html">Prestenationer</a></li>
+                <li><a href="html5/pages/kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Kursblogg</h1>
+            <h2>Laboration 1</h2>
+            <h3>It's alive</h3>
+            <p>Nu är det igång! </p>
+            <p>Uppdateringar kommer innom kort!</p>
+            <p>Gå direkt till:<a href="html5/pages/laborationer.html#labb1"> Laborationsportalen</a>.</p>
+            <p>Yours truly: Kim. 2015-08-27</p>
+            <h3 id="1.1">Uppgift 1.1 – Utvecklingsmiljön</h3>
+            <p>-Bekanta sig med den utvecklingsmiljö som ska användas</p>
+            <ul>
+                <li><a href="https://c9.io">Cloud9</a></li>
+                <li><a href="https://github.com">GitHub</a></li>
+            </ul>
+            <p>Jag hade ingen tidigare efarenhet av Cloud9 och något begränsad erfarenhet av Github.
+                <br> Mitt första intryck var endå gott.
+                <br> Jag har upplevt flera possitiva fördelar med att arbeta i en molnbaserad miljö
                 <p>Posted 2015-09-01</p>
-                <hr>
-
-                <h3 id="1.6">Uppgift 1.6 - Bilder</h3>
-                <p>-Infoga bilder av typen jpeg, pgn, svg.</p>
-                <ul>
-                    <li>jpeg med ankarlänk från laboration 1.6 till presentation.</li>
-                    <li>Skapa en logga av typen png som ska ligga på förstasidan.</li>
-                    <li>Skapa en vektorbaserad bild.</li>
-                    <li>Länka till uppgiften från laborationer.</li>
-                </ul>
-                <p>Här använde jag mig egentligen inte av just ett foto som jpeg,
-                    <br> utan tog det jag hade till hands.
-                    <br> Vet dock skilladen mellan de olika formaten.</p>
+                <h3 id="1.2">Uppgift 1.2 – Ett första dokument</h3>
+                <p>-Skapa ett första html-dokument <a href="html5/pages/presentation.html">presentation.html</a>.</p>
+                <p>-Validera sidan med: <a href="https://validator.w3.org/">Validator.W3.org</a></p>
+                <p>Här blev det något sparsmakat med info och jag kunde ha valt att vara mer utförlig.
+                    <br> Dock kände jag att just den biten riskerade att bli väldigt tidskonsumerande.
+                    <br> För att kunna lägga fokus på den egentliga uppgiften blev sidan lite knapphändig.</p>
+                <p>Valideringen via "validator.W3.org" har varit ett utmärkt vektyg att ha till hands.</p>
                 <p>Posted 2015-09-01</p>
-                <hr>
-
-                <h3 id="1.7">Uppgift 1.7 – Video</h3>
-                <p>-Testa att länka in med hjälp av video-taggen.</p>
-                <video width="400" controls>
-                    <source src="videos/bbb.mp4" type="video/mp4">
-                    <source src="videos/bbb.ogv" type="video/ogg"> Your browser does not support the video tag.
-                </video>
+                <h3 id="1.3">Uppgift 1.3 – Startsidan</h3>
+                <p>-Skapa en html-sida som kallas <a href="index.html">index.html</a></p>
+                <p>-Sidan kommer att fungera som en form av blogg för att presentera uppgifter som görs i kursen</p>
+                <p>Just hur jag skulle använda mig av startsidan skapade mycket tveksamheter hos mig.
+                    <br> Jag tvekade länge på hur jag skulle strukturera mitt innehåll, pga ovana.
+                    <br> Däremot gav det sig då jag väl satte igång att "bara göra det".</p>
                 <p>Posted 2015-09-01</p>
-                <hr>
-
-                <h3 id="1.8">Uppgift 1.8 – Tabeller</h3>
-                <p>-Konstruera en tabell innehållande ditt studieresultat under kursen.</p>
-                <p>-Tabellen placeras lämpligtvis på sidan laborationer.html efter ankarlänkarna under rubriken "Webbteknisk introduktion"</p>
-                <a href="html5/pages/laborationer.html#1.8">Resultat</a>
+                <h3 id="1.4">Uppgift 1.4 – Absoluta/Relativa sökvägar</h3>
+                <p>-Bekanta sig med sökvägar och länkar</p>
+                <p>Svara på uppgiften: <a href="html5/pages/laborationer.html#1.4">Uppgift 1.4</a></p>
                 <p>Posted 2015-09-01</p>
-                <hr>
-
-                <h3 id="1.9">Uppgift 1.9 - Formulär</h3>
-                <p>-Skapa ett formulär.</p>
-                <a href="html5/pages/kontakt.html">Formulär</a>
-                <p>Posted 2015-09-01</p>
-                <hr>
-
-                <!--<h3 id="extra">Extrauppgift 1 – HTML5 taggar<h3>-->
-
-                <!--<h2>Laboration 2</h2>
-
-    <hr>
+                <h3 id="1.5">Uppgift 1.5 – Länkar och mer listor</h3>
+                <p>-Skapa de kataloger och filer som behövs för att lösa uppgiften.</p>
+                <p>-Skapa en intern länkstruktur som länkar mellan sidorna.</p>
+                <p>-Bygg upp en struktur för "Laborationsportalen" med ankarlänkar.</p>
+                <p>Utan en tydlig bild av slutresultatet så kan små förändringar skapa mycket merarbete.
+                    <br> "Har man inte jobb så skaffar man".
+                    <p>
+                        <p>Posted 2015-09-01</p>
+                        <h3 id="1.6">Uppgift 1.6 - Bilder</h3>
+                        <p>-Infoga bilder av typen jpeg, pgn, svg.</p>
+                        <ul>
+                            <li>jpeg med ankarlänk från laboration 1.6 till presentation.</li>
+                            <li>Skapa en logga av typen png som ska ligga på förstasidan.</li>
+                            <li>Skapa en vektorbaserad bild.</li>
+                            <li>Länka till uppgiften från laborationer.</li>
+                        </ul>
+                        <p>Här är en vektorbild:</p>
+                        <img src="pics/vektor.svg" alt="me" width="50" height="70">
+                        <p>Här använde jag mig egentligen inte av just ett foto som jpeg,
+                            <br> utan tog det jag hade till hands.
+                            <br> Vet dock skilladen mellan de olika formaten.</p>
+                        <p>Posted 2015-09-01</p>
+                        <h3 id="1.7">Uppgift 1.7 – Video</h3>
+                        <p>-Testa att länka in med hjälp av video-taggen.</p>
+                        <video width="400" controls>
+                            <source src="videos/bbb.mp4" type="video/mp4">
+                            <source src="videos/bbb.ogv" type="video/ogg"> Your browser does not support the video tag.
+                        </video>
+                        <p>Posted 2015-09-01</p>
+                        <h3 id="1.8">Uppgift 1.8 – Tabeller</h3>
+                        <p>-Konstruera en tabell innehållande ditt studieresultat under kursen.</p>
+                        <p>-Tabellen placeras lämpligtvis på sidan laborationer.html efter ankarlänkarna under rubriken "Webbteknisk introduktion"</p>
+                        <a href="html5/pages/laborationer.html#1.8">Resultat</a>
+                        <p>Posted 2015-09-01</p>
+                        <h3 id="1.9">Uppgift 1.9 - Formulär</h3>
+                        <p>-Skapa ett formulär.</p>
+                        <a href="html5/pages/kontakt.html">Formulär</a>
+                        <p>Posted 2015-09-01</p>
+                        <!--<h3 id="extra">Extrauppgift 1 – HTML5 taggar<h3>-->
+        </div>
+        <!--<h2>Laboration 2</h2>
+    
     <h3>Uppgift</h3>
     <p>text</p>
     <p>text</p>
-
-    <hr>-->
-
+    -->
+        <div id="footer">En div-footer</div>
+    </div>
 </body>
 
 </html>
