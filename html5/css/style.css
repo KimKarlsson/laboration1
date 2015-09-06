@@ -1,35 +1,40 @@
+body {
+	background-color: #f0f8ff;
+}
+
 #container {
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-	border-style: solid;
-    border-width: 5px;
+	background-color: #BDC3D0;
 }
 
 #header {
 	text-align: center;
-	border-style: solid;
-    border-width: 5px;
+	background-color: white;
 }
 
 #navigation {
-	
 	width: 180px;
 	float: left;
-	border-style: solid;
-    border-width: 5px;
+	background-color: #A9B4C7;
 }
 
 
 #content {
 	width: 700px;
 	float: right;
-	border-style: solid;
-    border-width: 5px;
+	background-color: #BDC3D0;
 }
 
 #footer {
 	clear: both;
-	border-style: solid;
-    border-width: 5px;
+	background-color: #7688A9;
+	color: white;
+
+}
+
+table, td, th {
+	border: 1px solid gray 
+	
 }
