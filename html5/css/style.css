@@ -1,11 +1,62 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
+	line-height: 1;
 	background-color: #f0f8ff;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 #container {
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+
+}
+
+#main {
+	overflow: auto;
 	background-color: #BDC3D0;
 }
 
@@ -16,14 +67,39 @@ body {
 
 #navigation {
 	width: 180px;
+	/*height: 180px;*/
 	float: left;
-	background-color: #A9B4C7;
+	background-color: #A9D9FF;
 }
 
+/* ny kod */
+
+#navigation li a {
+	display: block;
+    margin-top: 1px;
+    width: 180px;
+    height: 20px; 
+   background-color: #7688A9;
+   color: white; 
+}
+	
+#navigation li a:hover {
+  background-color: white;
+  color: black;
+} 
+
+#navigation .active
+{
+    background: #70A9C9;
+    color:  #C4BCB0;
+    text-align:right;
+}
+
+/* slut nav*/
 
 #content {
 	width: 700px;
-	float: right;
+	float: left;
 	background-color: #BDC3D0;
 }
 
@@ -31,9 +107,31 @@ body {
 	clear: both;
 	background-color: #7688A9;
 	color: white;
-
+	text-align:right;
 }
+
+/* tabellen*/
 
 table, td, th {
 	border: 1px solid gray 
 }
+
+ul {
+	list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+body bg color: f0f8ff
+main bg color: BDC3D0
+header bg color: white
+navigation bg color: A9D9FF
+Nav active: 70A9C9 
+nav active text:  C4BCB0
+content bg color: BDC3D0
+footer bg color: 7688A9
+footer text color: white
+*/
