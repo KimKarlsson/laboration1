@@ -21,18 +21,14 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	vertical-align: baseline; 
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1em;
-	background-color: #f0f8ff;
-	font-family: georgia, helvetica, sans-serif;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -49,33 +45,49 @@ table {
 	border-spacing: 0;
 }
 
-/* min kod*/
-/* font family font size*/
+/* ---end reset-- */
 
-h1 {
-	font-size: 2em;
-	/*line-height: 2em;*/
+/* --Body--Container--Header--Navigation--Content--Footer--Main*/
+
+body {
+	line-height: 1em;
+	background-color: #f0f8ff;
+	font-family: georgia, helvetica, sans-serif;
+	padding: 10px;
 }
 
-h2 {
-	font-size: 1.5em;
-}
-
-h3 {
-	font-size: 1.2em;
-}
-
-p {
-	font-size: 16px;
-}
-
-
-/*v container*/
 #container {
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+}
 
+#header {
+	vertical-align: middle;
+	text-align: center;
+	display: table-cell; 
+	background-color: #A9D9FF;
+	width:1000px;
+    height:200px;
+}
+
+#navigation {
+	width: 180px;
+	float: left;
+	background-color: #A9D9FF;
+}
+
+#content {
+	width: 410px;
+	float: left;
+	background-color: #BDC3D0;
+}
+
+#footer {
+	clear: both;
+	background-color: #7688A9;
+	color: white;
+	text-align:right;
 }
 
 #main {
@@ -83,19 +95,7 @@ p {
 	background-color: #BDC3D0;
 }
 
-#header {
-	text-align: center;
-	background-color: white;
-}
-
-#navigation {
-	width: 180px;
-	/*height: 180px;*/
-	float: left;
-	background-color: #A9D9FF;
-}
-
-/* ny kod */
+/* --Menu--Navigation-- */
 
 #navigation li a {
 	display: block;
@@ -118,26 +118,30 @@ p {
     text-align:right;
 }
 
-/* slut nav*/
-
-#content {
-	width: 410px;
-	float: left;
-	background-color: #BDC3D0;
-}
-
-#footer {
-	clear: both;
-	background-color: #7688A9;
-	color: white;
-	text-align:right;
-}
-
-/* tabellen*/
+/* --Table-- */
 
 table, td, th {
 	border: 1px solid gray 
 }
+
+/* Egenskaper element */
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+p {
+	font-size: 16px;
+}
+
 
 ul {
 	list-style-type: none;
@@ -148,6 +152,7 @@ a {
 }
 
 a:hover { color: blue; text-decoration: underline; }
+
 /*
 a:link
 a.visited
