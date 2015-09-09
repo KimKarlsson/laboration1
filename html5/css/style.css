@@ -108,8 +108,9 @@ body {
     margin-top: 1px;
     width: 180px;
     height: 20px; 
-   background-color: #7688A9;
-   color: white; 
+    padding-right: 15px;
+    background-color: #7688A9;
+    color: white; 
 }
 	
 #navigation li a:hover {
@@ -124,8 +125,16 @@ body {
     text-align:right;
 }
 
-/* --Table-- */
+/*Menu anchor "Laborationer.html"*/
+/* --snygga till ankarlänarna, när tid finnes--
+#anchor ul li a:hover {
+  color: black;
+}
+#anchor ul li a:visited {
+	color: yellow;
+}*/
 
+/* --Table-- */
 table, td, th {
 	border: 1px solid gray 
 }
@@ -150,8 +159,15 @@ p {
 }
 
 
-ul {
+#content ul {
 	list-style-type: none;
+	padding: 10px 10px 10px 40px;
+	line-height: 1.3em;
+}
+
+dl {
+	padding: 10px;
+	line-height: 1.5em;
 }
 
 a {
@@ -163,7 +179,7 @@ a:hover {
 	
 }
 
-
+/*Bloggpost*/
 article
 {
     background-image: url("pics/blogg.png");
@@ -173,7 +189,7 @@ article
 }
 article h3 {
 	text-indent: 40px;
-	padding: 8px 0 0 0;
+	padding-top: 8px;
 	/*vertical-align: middle;*/
 }
 
