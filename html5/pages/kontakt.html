@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Kontakt</title>
-        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 
 <body>
@@ -15,56 +15,56 @@
             <p>Kims något unika sida</p>
         </div>
         <div id="main">
-        <div id="navigation">
-            <ul>
-                <li><a href="../../index.html">Start</a></li>
-                <li><a href="laborationer.html">Laborationer</a></li>
-                <li><a href="presentation.html">Prestenationer</a></li>
-                <li><a href="kontakt.html" class="active">Kontakt</a></li>
-            </ul>
+            <div id="navigation">
+                <ul>
+                    <li><a href="../../index.html">Start</a></li>
+                    <li><a href="laborationer.html">Laborationer</a></li>
+                    <li><a href="presentation.html">Prestenationer</a></li>
+                    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div id="content">
+                <h3>OBS, detta är ett påhittat kontaktforum.</h3>
+                <form method="post" action="http://webproduction.standout.se/form.php">
+                    <fieldset>
+                        <legend>Fråga</legend>
+                        <label>Ärendetyp
+                            <select name="errand">
+                                <option value="fråga">Fråga</option>
+                                <option value="hur">Hur</option>
+                                <option value="när">När</option>
+                                <option value="var">Var</option>
+                            </select>
+                        </label>
+                        <br />
+                        <label>Rubrik:
+                            <input type="text" value="Vad göra?" class="text" name="title" size="20" />
+                        </label>
+                        <br />
+                        <label>Fråga:
+                            <textarea name="question" cols="20" rows="2"></textarea>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Information om dig</legend>
+                        <label>
+                            Kontakta mig via mail
+                            <input type="checkbox" name="contacs[]" value="mail">
+                            <br />
+                        </label>
+                        <label>
+                            Kontakta mig via telefon
+                            <input type="checkbox" name="contact[]" value="telefon">
+                            <br />
+                        </label>
+                    </fieldset>
+                    <input type="submit" value="Skicka frågan">
+                    <br />
+                </form>
+            </div>
         </div>
-    
-    <div id="content">
-        <h3>OBS, detta är ett påhittat kontaktforum.</h3>
-        <form method="post" action="http://webproduction.standout.se/form.php">
-            <fieldset>
-                <legend>Fråga</legend>
-                <label>Ärendetyp
-                    <select name="errand">
-                        <option value="fråga">Fråga</option>
-                        <option value="hur">Hur</option>
-                        <option value="när">När</option>
-                        <option value="var">Var</option>
-                    </select>
-                </label>
-                <br />
-                <label>Rubrik:
-                    <input type="text" value="Vad göra?" class="text" name="title" size="20" />
-                </label>
-                <br />
-                <label>Fråga:
-                    <textarea name="question" cols="20" rows="2"></textarea>
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>Information om dig</legend>
-                <label>
-                    Kontakta mig via mail
-                    <input type="checkbox" name="contacs[]" value="mail">
-                    <br />
-                </label>
-                <label>
-                    Kontakta mig via telefon
-                    <input type="checkbox" name="contact[]" value="telefon">
-                    <br />
-                </label>
-            </fieldset>
-            <input type="submit" value="Skicka frågan">
-            <br />
-        </form>
-    </div>    
-    </div>
-     <div id="footer">Copyright &copy; 2015 Kim Karlsson</div>
+        <div id="footer">Copyright &copy; 2015 Kim Karlsson</div>
     </div>
 </body>
 

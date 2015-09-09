@@ -125,6 +125,21 @@ body {
     text-align:right;
 }
 
+/*Bilder*/
+#content article #taxi {
+	float: right; 
+	/*margin: 0px 15px 15px 0px;*/
+	width: 50%;
+    height: 50%;
+    border-style: solid;
+    border-width: 5px;
+}
+#content article video {
+ 	float: right;
+ 	width: 50%;
+ 	height: 50%;
+}
+
 /*Menu anchor "Laborationer.html"*/
 /* --snygga till ankarlänarna, när tid finnes--
 #anchor ul li a:hover {
