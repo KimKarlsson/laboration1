@@ -44,11 +44,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* ---end reset-- */
 
 /* --Body--Container--Header--Navigation--Content--Footer--Main*/
-
 body {
 	line-height: 1em;
 	background-color: #f0f8ff;
@@ -58,8 +56,8 @@ body {
 
 #container {
 	width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
+	box-shadow: 10px 10px 10px;
 }
 
 #header {
@@ -73,13 +71,6 @@ body {
 	width:1000px;
     height:200px;
     /*padding: 30px;*/
-}
-
-#navigation {
-	width: 180px;
-	float: left;
-	background-color: #BDC3D0;
-	padding: 10px;
 }
 
 #content {
@@ -97,11 +88,17 @@ body {
 }
 
 #main {
-	overflow: auto;
+	overflow: hidden;
 	background-color: #BDC3D0;
 }
 
 /* --Menu--Navigation-- */
+#navigation {
+	width: 180px;
+	float: left;
+	background-color: #BDC3D0;
+	padding: 10px;
+}
 
 #navigation li a {
 	display: block;
@@ -111,11 +108,13 @@ body {
     padding-right: 15px;
     background-color: #7688A9;
     color: white; 
+    text-decoration: none;
 }
 	
 #navigation li a:hover {
-  background-color: white;
-  color: black;
+ 	background-color: white;
+	color: black;
+	font-weight: bold;
 } 
 
 #navigation .active
@@ -125,37 +124,44 @@ body {
     text-align:right;
 }
 
-/*Bilder*/
-#content article #taxi {
-	float: right; 
-	/*margin: 0px 15px 15px 0px;*/
-	width: 50%;
-    height: 50%;
-    border-style: solid;
-    border-width: 5px;
-}
-#content article video {
- 	float: right;
- 	width: 50%;
- 	height: 50%;
+/*Menu anchor "Laborationer.html"*/
+#anchor {
+	width: 500px;
+	height: 140px;
 }
 
-/*Menu anchor "Laborationer.html"*/
-/* --snygga till ankarlänarna, när tid finnes--
+#anchor ul li a {
+	display: block;
+	margin: 10px;
+	width: 110px;
+    height: 20px;
+}
+ 
 #anchor ul li a:hover {
   color: black;
+  font-weight: bold;
+ /* border-style: outset;*/
+  /*box-shadow: 10px 10px 10px;*/
+  text-decoration: none;
 }
+
 #anchor ul li a:visited {
-	color: yellow;
-}*/
+	color: #333;
+}
 
 /* --Table-- */
-table, td, th {
-	border: 1px solid gray 
+table {
+    box-shadow:1px 2px 20px;
+    margin:20px;
+}
+
+th, td {
+    border: 5px solid black;
+    padding: 5px;
+    text-align: center;
 }
 
 /* Egenskaper element */
-
 h1 {
 	font-size: 2em;
 }
@@ -185,39 +191,52 @@ dl {
 	line-height: 1.5em;
 }
 
-a {
+
+/* --- Länkar --- */
+#content a {
+	color: #7688A9;
     text-decoration: none;
 }
 
-a:hover { 
-	color: blue; text-decoration: underline; 
-	
+#content a:visited {
+    color: #497796;
 }
 
-/*Bloggpost*/
-article
-{
+#content a:hover { 
+	font-weight: bold;
+	color: #2D495C; 
+	text-decoration: none;
+}
+
+/* --- Bloggpost --- */
+article {
     background-image: url("pics/blogg.png");
     background-repeat:no-repeat;
     background-position: 0% 0%;
-    /*text-indent: 40px no-repeat;*/
 }
+
 article h3 {
 	text-indent: 40px;
 	padding-top: 8px;
-	/*vertical-align: middle;*/
 }
 
+ .right {
+	float:right;
+	border-style: solid;
+    border-width: 5px;
+} 
 
+.stycke {
+    margin-bottom: 1.5em;
+}
 
-
-
-/*
-a:link
-a.visited
-a:focus
-a:active
-*/
+.posted {
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
+	font-size: 0.9em;
+	font-weight:bold;
+	font-style:italic;
+}
 
 /*
 body bg color: f0f8ff
@@ -229,4 +248,7 @@ nav active text:  C4BCB0
 content bg color: BDC3D0
 footer bg color: 7688A9
 footer text color: white
+link :
+link hover: 
+link visited: 
 */
