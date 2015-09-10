@@ -50,8 +50,13 @@ table {
 body {
 	line-height: 1em;
 	background-color: #f0f8ff;
-	font-family: georgia, helvetica, sans-serif;
+	font-family: Glegoo, georgia, helvetica, sans-serif;
 	padding: 10px;
+}
+
+@font-face {
+    font-family: Glegoo;
+    src: url(Glegoo-Regular.ttf);
 }
 
 #container {
@@ -94,7 +99,7 @@ body {
 
 /* --Menu--Navigation-- */
 #navigation {
-	width: 180px;
+	width: 190px;
 	float: left;
 	background-color: #BDC3D0;
 	padding: 10px;
@@ -103,12 +108,13 @@ body {
 #navigation li a {
 	display: block;
     margin-top: 1px;
-    width: 180px;
+    width: 170px;
     height: 20px; 
-    padding-right: 15px;
+    padding: 0 15px 0 15px;
     background-color: #7688A9;
     color: white; 
     text-decoration: none;
+    border-radius: 10px;
 }
 	
 #navigation li a:hover {
@@ -133,15 +139,17 @@ body {
 #anchor ul li a {
 	display: block;
 	margin: 10px;
-	width: 110px;
+	width: 120px;
     height: 20px;
+    padding: 3px;
+    border: solid #7688A9;
+    border-radius: 10px;
 }
  
 #anchor ul li a:hover {
   color: black;
   font-weight: bold;
- /* border-style: outset;*/
-  /*box-shadow: 10px 10px 10px;*/
+  box-shadow: 10px 10px 10px;
   text-decoration: none;
 }
 
@@ -156,9 +164,10 @@ table {
 }
 
 th, td {
-    border: 5px solid black;
+    border: 3px solid black;
     padding: 5px;
     text-align: center;
+    
 }
 
 /* Egenskaper element */
@@ -194,7 +203,7 @@ dl {
 
 /* --- Länkar --- */
 #content a {
-	color: #7688A9;
+	color: #0074d9;
     text-decoration: none;
 }
 
@@ -238,6 +247,8 @@ article h3 {
 	font-style:italic;
 }
 
+
+
 /*
 body bg color: f0f8ff
 main bg color: BDC3D0
@@ -248,7 +259,4 @@ nav active text:  C4BCB0
 content bg color: BDC3D0
 footer bg color: 7688A9
 footer text color: white
-link :
-link hover: 
-link visited: 
 */
