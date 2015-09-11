@@ -60,7 +60,7 @@ body {
 }
 
 #container {
-	width: 1000px;
+	max-width: 1000px;
 	margin: auto;
 	box-shadow: 10px 10px 10px;
 }
@@ -79,7 +79,7 @@ body {
 }
 
 #content {
-	width: 500px; 
+	max-width: 500px; 
 	float: left;
 	background-color: #BDC3D0;
 	padding: 10px; 
@@ -102,25 +102,29 @@ body {
 	width: 190px;
 	float: left;
 	background-color: #BDC3D0;
-	padding: 10px;
+	padding: 10px; 
 }
 
 #navigation li a {
 	display: block;
-    margin-top: 1px;
-    width: 170px;
-    height: 20px; 
-    padding: 0 15px 0 15px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 145px;
+    height: 26px; 
+    padding: 6px 15px 0 26px; 
     background-color: #7688A9;
     color: white; 
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 5px; 
 }
 	
 #navigation li a:hover {
  	background-color: white;
 	color: black;
 	font-weight: bold;
+    height:26px; 
+	/*margin-top: 10px;*/
+	/*margin-bottom: 4px; 10*/
 } 
 
 #navigation .active
@@ -128,7 +132,90 @@ body {
     background: #70A9C9;
     color:  #C4BCB0;
     text-align:right;
+    height:26px;
 }
+
+#navigation ul {
+	margin-bottom: 100%;
+}
+
+/*-- listIcon -- home */
+#home {
+	width: 24px;
+	height: 24px;
+	display: block;
+	background-image: url("pics/sprite.png");
+	background-repeat:no-repeat;
+	float: left; 
+}
+
+#home {
+	background-position: 0 -48px;
+}
+
+#home:hover {
+	background-position: 0 0; 
+}
+
+/*work*/
+#work {
+	width: 24px;
+	height: 24px;
+	display: block;
+	background-image: url("pics/sprite.png");
+	background-repeat:no-repeat;
+	float: left;
+}
+
+#work {
+	background-position: 0 -144px;
+}
+
+#work:hover {
+	background-position: 0 -96px; 
+}
+
+/*pres*/
+#pres {
+	width: 24px;
+	height: 24px;
+	display: block;
+	background-image: url("pics/sprite.png");
+	background-repeat:no-repeat;
+	float: left;
+}
+
+#pres {
+	background-position: 0 -240px;
+}
+
+#pres:hover {
+	background-position: 0 -192px; 
+}
+
+#cont {
+	width: 24px;
+	height: 24px;
+	display: block;
+	background-image: url("pics/sprite.png");
+	background-repeat:no-repeat;
+	float: left;
+}
+
+#cont {
+	background-position: 0 -336px;
+}
+
+#cont:hover {
+	background-position: 0 -288px; 
+}
+
+/*home
+work
+pres
+cont*/
+
+
 
 /*Menu anchor "Laborationer.html"*/
 #anchor {
