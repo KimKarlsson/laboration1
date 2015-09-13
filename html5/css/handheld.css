@@ -6,20 +6,25 @@
    	background-image: url("pics/justlog.png");
     background-repeat:no-repeat;
     background-position: 0% 0%;
-     max-width: 100%;
-    
-    /*vertical-align: middle;*/
-	  /* text-align: center;*/
-    /*display: table-cell; */
-	   /*background-color: #A9D9FF;*/
-    /*width: 30em;*/
+    max-width: 100%;
 	   height: 6em;
 	   text-indent: 70px;
-	   /*word-spacing: 40px;/*
-	   /*white-space: pre-line;*/
 	   line-height: 2em;
 }
 
 .right {
     max-width:50%;
+}
+
+#navigation li a {
+    background-image: none;
+    padding: 6px 15px 0 15px;
+}
+
+/*#navigation li a {
+    padding: 6px 15px 0 15px;
+}*/
+
+#navigation .active {
+    background-image: none;
 }
