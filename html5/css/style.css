@@ -124,30 +124,32 @@ body {
 	/*margin-bottom: 4px; 10*/
 } 
 
-/*#navigation .active {		--ofunk tsm med icon--
+#navigation .active {		
     background: #70A9C9;
     color:  #C4BCB0;
     text-align:right;
     height:26px;
-    /*width: 145px;
-}*/
+    width: 145px;
+    display: block;
+	background-image: url("pics/sprite.png");
+	background-position: 0 -48px;
+	background-repeat:no-repeat;
+	float: left;
+}
 
 #navigation ul {
 	margin-bottom: 100%;
 }
 
 /*-- listIcon -- home */
-#home {
-	width: 24px;
+#navigation a {
+	width: 145px;
+	/*width: 24px;*/
 	height: 24px;
 	display: block;
 	background-image: url("pics/sprite.png");
 	background-repeat:no-repeat;
 	float: left; 
-}
-
-#home {
-	background-position: 0 -48px;
 }
 
 /* --kod för att få "active" att fungera tsm med icon -- 
@@ -164,11 +166,16 @@ body {
 	float: left;
 }*/
 
+/*home*/
+#home {
+	background-position: 0 -48px;
+}
+
 #home:hover {
 	background-position: 0 0; 
 }
 
-/*work*/
+/*work --DRY--
 #work {
 	width: 24px;
 	height: 24px;
@@ -176,8 +183,9 @@ body {
 	background-image: url("pics/sprite.png");
 	background-repeat:no-repeat;
 	float: left;
-}
+}*/
 
+/*Laborations*/
 #work {
 	background-position: 0 -144px;
 }
@@ -186,7 +194,7 @@ body {
 	background-position: 0 -96px; 
 }
 
-/*pres*/
+/*pres 	--DRY--
 #pres {
 	width: 24px;
 	height: 24px;
@@ -194,8 +202,9 @@ body {
 	background-image: url("pics/sprite.png");
 	background-repeat:no-repeat;
 	float: left;
-}
+}*/
 
+/*presentation*/
 #pres {
 	background-position: 0 -240px;
 }
@@ -204,6 +213,7 @@ body {
 	background-position: 0 -192px; 
 }
 
+/*cont 	--DRY--
 #cont {
 	width: 24px;
 	height: 24px;
@@ -211,8 +221,9 @@ body {
 	background-image: url("pics/sprite.png");
 	background-repeat:no-repeat;
 	float: left;
-}
+}*/
 
+/*contact*/
 #cont {
 	background-position: 0 -336px;
 }
