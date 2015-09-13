@@ -2,6 +2,10 @@
     width:100%;
 }
 
+#content {
+    background-color:white;
+}
+
 #header {
    	background-image: url("pics/justlog.png");
     background-repeat:no-repeat;
@@ -12,8 +16,16 @@
 	   line-height: 2em;
 }
 
+#header h1 {
+    margin: 0;
+}
+
 .right {
     max-width:50%;
+}
+
+#navigation {
+    background-color:white;
 }
 
 #navigation li a {
@@ -21,10 +33,26 @@
     padding: 6px 15px 0 15px;
 }
 
-/*#navigation li a {
-    padding: 6px 15px 0 15px;
-}*/
-
 #navigation .active {
     background-image: none;
+}
+
+#navigation li a:hover {
+    background-color: gray;
+}
+
+#main {
+    max-width: 100%;
+    padding: 0.6em;
+    background-color:white;
+}
+
+
+
+#main { 
+    clear: both;
+}
+
+#footer {
+	clear: both;
 }

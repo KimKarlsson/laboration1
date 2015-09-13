@@ -120,8 +120,6 @@ body {
 	color: black;
 	font-weight: bold;
     height:26px; 
-	/*margin-top: 10px;*/
-	/*margin-bottom: 4px; 10*/
 } 
 
 #navigation .active {		
@@ -129,7 +127,8 @@ body {
     color:  #C4BCB0;
     text-align:right;
     height:26px;
-    width: 145px;
+    width: 145px;  
+    /*activ för att funka tsm med icon*/
     display: block;
 	background-image: url("pics/sprite.png");
 	background-position: 0 -48px;
@@ -141,30 +140,15 @@ body {
 	margin-bottom: 100%;
 }
 
-/*-- listIcon -- home */
-#navigation a {
+/*-- list Icon --  */
+#navigation a {   
 	width: 145px;
-	/*width: 24px;*/
 	height: 24px;
 	display: block;
 	background-image: url("pics/sprite.png");
 	background-repeat:no-repeat;
 	float: left; 
 }
-
-/* --kod för att få "active" att fungera tsm med icon -- 
-#navigation .active {
-    background: #70A9C9;
-    color:  #C4BCB0;
-    text-align:right;
-    height:26px;
-    width: 145px; 
-	display: block;
-	background-image: url("pics/sprite.png");
-	background-position: 0 -48px;
-	background-repeat:no-repeat;
-	float: left;
-}*/
 
 /*home*/
 #home {
