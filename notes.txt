@@ -3,6 +3,6 @@
     Ändra storlek på menyn och header. Förstora. Göra relativ 
 -Om användaren väljer att spara din sajt som en genväg från hemskärmen i iOS så ska du
 erbjuda en speciell ikon för detta
--"favicon" på alla sidor. 
+
 
 -fixa fäger på länkar
