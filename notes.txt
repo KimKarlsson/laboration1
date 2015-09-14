@@ -2,7 +2,9 @@
 -sortera ut media query
     Ändra storlek på menyn och header. Förstora. Göra relativ 
 -Om användaren väljer att spara din sajt som en genväg från hemskärmen i iOS så ska du
-erbjuda en speciell ikon för detta
+erbjuda en speciell ikon för detta --Ej testad, vet inte vad namnet blir när den är sparad. 
+-När användaren surfar in med en smartphone så ska man inte behöva zooma på sidan.
+-Arbeta igenom formuläret så att det lämpar sig för mobila enheter
 
 
 -fixa fäger på länkar

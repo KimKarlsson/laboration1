@@ -9,11 +9,11 @@
 #header {
    	background-image: url("pics/justlog.png");
     background-repeat:no-repeat;
-    background-position: 0% 0%;
     max-width: 100%;
-	   height: 6em;
-	   text-indent: 70px;
-	   line-height: 2em;
+    height: 6em;
+    text-indent: 70px;
+	line-height: 2em;
+	font-weight: bold;
 }
 
 #header h1 {
@@ -25,32 +25,55 @@
 }
 
 #navigation {
+    width: 100%;
     background-color:white;
 }
 
+/*#navigation {
+	width: 11.9em;
+	/*width: 190px;
+	float: left;
+	background-color: #BDC3D0;
+	padding: 10px; 
+}*/
+
+/*#navigation li {
+    margin: 0.6em 0em 0.6em;
+}*/
+
 #navigation li a {
     background-image: none;
-    padding: 6px 15px 0 15px;
+    padding: 10px 1px 0 0px;
+    height: 2em;
+    width: 24%;
+    margin: 0 0%;
+    font-size: 1.9em;
+	font-weight:bold;
 }
 
 #navigation .active {
+    height: 2em;
+    width: 24%;
     background-image: none;
 }
 
 #navigation li a:hover {
     background-color: gray;
+    height: 2em;
 }
 
 #main {
     max-width: 100%;
-    padding: 0.6em;
+    padding: 0em 5em 0em 5em;
     background-color:white;
 }
 
-
-
 #main { 
     clear: both;
+}
+
+article {
+    background-size: 2em;
 }
 
 #footer {

@@ -86,17 +86,21 @@ body {
 	background-color: #7688A9;
 	color: white;
 	text-align:right;
+	height: 2em;
+	padding: 0.8em;
 }
 
 #main {
 	float: left;
 	max-width: 60%;
+	min-height: 100%;
 	background-color: #BDC3D0;
 }
 
 /* --Menu--Navigation-- */   
 #navigation {
-	width: 190px;
+	width: 11.9em;
+	/*width: 190px;*/
 	float: left;
 	background-color: #BDC3D0;
 	padding: 10px; 
@@ -136,9 +140,9 @@ body {
 	float: left;
 }
 
-#navigation ul {
+/*#navigation ul {
 	margin-bottom: 100%;
-}
+}*/
 
 /*-- list Icon --  */
 #navigation a {   
@@ -312,7 +316,7 @@ article {
 
 article h3 {
 	text-indent: 40px;
-	padding-top: 8px;
+	padding-top: 0.5em;
 }
 
  .right {
