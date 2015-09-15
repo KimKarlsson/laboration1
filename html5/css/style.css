@@ -46,7 +46,7 @@ table {
 }
 /* ---end reset-- */
 
-/* --Body--Container--Header--Navigation--Content--Footer--Main*/
+/* --Body--Container--Header--Navigation--Content--Main*/
 body {
 	line-height: 1em;
 	background-color: #f0f8ff;
@@ -87,14 +87,6 @@ body {
 	line-height: 1.4em;
 }
 
-#footer {
-	clear: both;
-	background-color: #7688A9;
-	color: white;
-	text-align:right;
-	height: 2em;
-	padding: 0.8em;
-}
 
 #main {
 	float: left;
@@ -343,11 +335,37 @@ article h3 {
 	font-style:italic;
 }
 
+fieldset {
+	border: solid;
+	margin: 20px;
+	padding: 10px;
+}
+
+label {
+	float: left;
+	min-width: 100%;
+	padding: 10px;
+	margin: 10px;
+}
+
+
+
+/*--footer--*/
+#footer {
+	clear: both;
+	background-color: #7688A9;
+	color: white;
+	text-align:right;
+	height: 2em;
+	padding: 0.8em;
+}
+
 #footer a {
 	display: block;
 	color: white;
 	text-decoration: none;
 }
+
 #footer a:visited {
 	color: white;
 	text-decoration: none;
