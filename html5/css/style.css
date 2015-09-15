@@ -76,9 +76,15 @@ body {
 	height:13em;
 }
 
+#header h1, p {
+	/*padding-left: 100px;  påverkade class stycke. kan behövas till indent header. fixa manana manana*/
+	line-height: 1.1em;
+}
+
 #content {
 	overflow: hidden;
 	background-color: #BDC3D0;
+	line-height: 1.4em;
 }
 
 #footer {
@@ -93,14 +99,14 @@ body {
 #main {
 	float: left;
 	max-width: 60%;
-	min-height: 100%;
+	max-height: 100%;
 	background-color: #BDC3D0;
 }
 
 /* --Menu--Navigation-- */   
 #navigation {
 	width: 11.9em;
-	/*width: 190px;*/
+	margin-right: 17px;
 	float: left;
 	background-color: #BDC3D0;
 	padding: 10px; 
@@ -248,9 +254,9 @@ body {
 }
 
 /* --Table-- */
-table {
-    box-shadow:1px 2px 20px;
-    margin:20px;
+#table {
+   /* box-shadow:1px 2px 20px;*/
+   /* margin:20px;*/
 }
 
 th, td {
@@ -315,7 +321,7 @@ article {
 }
 
 article h3 {
-	text-indent: 40px;
+	text-indent: 2.5em;
 	padding-top: 0.5em;
 }
 
@@ -337,7 +343,15 @@ article h3 {
 	font-style:italic;
 }
 
-
+#footer a {
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+#footer a:visited {
+	color: white;
+	text-decoration: none;
+}
 
 /*
 body bg color: f0f8ff
