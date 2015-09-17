@@ -70,16 +70,32 @@ body {
     background-position: 0% 0%;
 	vertical-align: middle;
 	text-align: center;
-	display: table-cell; 
+	display: table-cell;
 	background-color: #A9D9FF;
 	width: 62.5em;
 	height:13em;
 }
 
 #header h1, p {
-	/*padding-left: 100px;  påverkade class stycke. kan behövas till indent header. fixa manana manana*/
 	line-height: 1.1em;
 }
+
+/*-- Holy Animations header --*/
+#header {
+  animation: pulse 10s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: #A9D9FF; 
+}
+  50% {
+    background-color: #87adcc;
+  }
+}
+
+
+
 
 #content {
 	overflow: hidden;
@@ -288,7 +304,6 @@ dl {
 	line-height: 1.5em;
 }
 
-
 /* --- Länkar --- */
 #main a {
 	color: #0074d9;
@@ -358,7 +373,13 @@ label {
 	text-align:right;
 	height: 2em;
 	padding: 0.8em;
+	/*Skitsnygga gradient*/
+	background: -webkit-linear-gradient(left, rgba(169,217,255,1), rgba(169,217,255,0), rgba(169,217,255,1)); /*Safari 5.1 till 6.0*/
+    background: -o-linear-gradient(right, rgba(169,217,255,1), rgba(169,217,255,0), rgba(169,217,255,1)); /*Opera 11.1 till 12.0*/
+    background: -moz-linear-gradient(right, rgba(169,217,255,1), rgba(169,217,255,0), rgba(169,217,255,1)); /*Firefox 3.6 till 15*/
+    background: linear-gradient(to right, rgba(169,217,255,1), rgba(169,217,255,0), rgba(169,217,255,1)); /*Standard*/ 
 }
+
 
 #footer a {
 	display: block;

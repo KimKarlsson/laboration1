@@ -129,3 +129,11 @@ label {
 #footer {
 	clear: both;
 }
+
+#footer a {
+    color: black;
+}
+
+#footer a:visited {
+	color: black;
+}
