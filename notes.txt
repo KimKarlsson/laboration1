@@ -1,5 +1,19 @@
-När uppgiften är slutförd så skriver du ett blogginlägg på förstasidan om hur du resonerat när
-du gjort om designen. Lägg in en bild i inlägget som visar sidan i sin "mobila" version.
+<script type="text/javascript" src="jquery.js"></script>
+
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    
+    
+</body>
+</html>
 
 
--fixa fäger på länkar
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

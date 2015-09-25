@@ -383,7 +383,7 @@ label {
 
 #footer a {
 	display: block;
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
@@ -403,3 +403,8 @@ content bg color: BDC3D0
 footer bg color: 7688A9
 footer text color: white
 */
+
+
+/*Spel TEST*/
+ /*Move the ball*/
+ canvas { background: #eee; display: block; margin: 0 auto; }
