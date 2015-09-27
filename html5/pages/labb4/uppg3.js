@@ -1,27 +1,28 @@
+//Uppgift 3
+console.log("test");
 
 var datorGissning = Math.floor( Math.random() * 101)+1;
 var anvGissning;
 var antalGissningar = 0; 
-var svar = 
+var svar = false;
 
- //  nån loop {
-
+while(!svar){
+    anvGissning = prompt("gissa ett nr 1-100");
+    antalGissningar++;
 if (anvGissning < datorGissning) {
-
+    //meddela mitt nr är större
+    alert("högre");
 } else if (anvGissning > datorGissning){
-    
+    //meddela mitt nr är mindre
+    alert("lägre");
 } else {
     //rätt svar +antal gissningar
+    //nåt som får slut på loopen
+    alert("rätt"); //be till gudaran att allt inte kraschar
+}
 }
 
-
-
-
-
-
-
-
-
+//Holy moses!! den funkade
 
 
 
