@@ -1,18 +1,39 @@
 //uppg7
 //moment I
-var medeltal = [10,2,89,9,65,13,3];
+var medeltal = [10, 2, 89, 9, 65, 13, 3];
+//medeltal.sort();
+//console.log(medeltal);
+
+function compareNumbers(a, b) {
+    return a - b;
+}
+//medeltal.sort(compareNumbers);
+/*var mySak = medeltal.sort(compareNumbers);
+var vadsom = mySak[0];
+var myVadsom = mySak[mySak.length-1];*/
+
+//console.log(mySak[0]);
+//console.log(mySak[mySak.length-1])
+
 
 function tentamen(medeltal) {
     var godis = 0;
     for (var i = 0; i < medeltal.length; i++) {
-        console.log(medeltal[i]);
-        godis += medeltal[i] 
-        //alert(medeltal[i]);
+        //  console.log(medeltal[i]);
+        godis += medeltal[i]
+            //alert(medeltal[i]);
     }
-    console.log(godis / medeltal.length);
-}
-tentamen(medeltal);
+    var mat = (godis / medeltal.length);
+    var mySak = medeltal.sort(compareNumbers);
+    var vadsom = mySak[0];
+    var myVadsom = mySak[mySak.length - 1];
+    var svar = [Math.round(mat), myVadsom, vadsom];
+    return svar;
 
+}
+console.log(tentamen(medeltal));
+//;
+//Math.round
 
 /*
 För att kontrollera att allt är som det ska kan du testa att skicka in följande array:
@@ -25,7 +46,8 @@ Moment III
 Presentera resultatet i konsolen.
 
 Moment II
-avgöra det högsta samt det lägsta resultatet.
+//Math.round
+returnera tre resultat, medelvärde, max och min
 Medelvärdet ska heltalsavrundas nedåt
 
 Moment I
