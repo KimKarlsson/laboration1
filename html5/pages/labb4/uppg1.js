@@ -1,5 +1,5 @@
 //Uppgift 1. Moment I & II
-function go (){
+function go() {
     console.log("Hello World");
     alert("Rad1\nRad2");
 };
