@@ -7,71 +7,37 @@ var string;
 var newString;
 //var till att kunna byta ut a.
 var hitA = "";
-string=prompt();
+string = prompt();
 
 console.log(string.toUpperCase());
 console.log(string.toLowerCase());
 
 
-for (var i =0; i < string.length; i++){
-  // console.log(string);
-   
-   if (string[i] === "a") {
-       console.log("funk");
-		// If we find it, add characters up to
-		// the length of my name to the array
-		/*
-		for(var j = i; j < (string.length + i); j++) {
-			hitA.push(text[j]); */
-		}
-}
+for (var i = 0; i < string.length; i++) {
+     console.log(string[i]);
 
+    if (string[i] === "a") {
+        //console.log("funk");
+        string = string.replace("a", "#");
+       //console.log(hitA);
+        
+        /*
+        // If we find it, add characters up to
+        // the length of my name to the array
+		for(var j = i; j < (string.length + i); j++) {
+			hitA.push(string[j]); 
+		*/
+		
+    } 
+}
+ console.log(string);
 
 //function myFunk(){
 //}
 
 
+
 /*
-var myName = "Eric";
-var hits = [];
-
-// Look for "E" in the text
-for(var i = 0; i < text.length; i++) {
-	if (text[i] === "E") {
-		// If we find it, add characters up to
-		// the length of my name to the array
-		for(var j = i; j < (myName.length + i); j++) {
-			hits.push(text[j]);
-		}
-	}
-}
-
-if (hits.length === 0) {
-	console.log("Your name wasn't found!");
-} else {
-	console.log(hits);
-}
----------------------------------------------------------------------
-var text = "bla bla bla bla nacho bal bla balbal bal ablalb \
-            bla blsa labaa blaba blab alb lbalb lalbal \
-            balba lbalab lab lab nacho labalbalb";
-var myName = "nacho";
-var hits = [];
-
-for (var i = 0; i < text.length; i++ ){
-  if(text[i] === "n") {
-      for(var j = i; j < (myName.length+i); j++);{
-        hits.push(text[j]) 
-      }
-}
-}
-if(hits===0){
-    console.log("Your name wasn't found!");
-} else {
-    console.log(hits);
-}
-
-
 ----------------------------------------------------------------------------
 Skriv funktionen konvertera i JavaScript. Denna funktion ska ta en textsträng som argument.
 Vidare ska funktionen ändra alla versaler i argumentet till gemener och alla gemener i
@@ -81,12 +47,5 @@ TYCKER j#v#script ÄR kul!”.
 När allt är ändrat ska resultatet returneras som en ny textsträng och sedan skrivas ut i
 konsolen.
 ---------------------------------------------------------------------------
-text = "Blah blah blah blah blah blah Eric \
-blah blah blah Eric blah blah Eric blah blah \
-blah blah blah blah blah Eric";
-
-
--------------------------------------------------------------------
-
 
 */
