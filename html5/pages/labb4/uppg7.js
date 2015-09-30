@@ -3,7 +3,7 @@
 //moment I
 var medeltal = [10, 2, 89, 9, 65, 13, 3];
 //medeltal.sort();
-//console.log(medeltal);
+console.log(medeltal);
 
 function compareNumbers(a, b) {
     return a - b;
@@ -24,7 +24,7 @@ function tentamen(medeltal) {
     return svar;
 
 }
-console.log(tentamen(medeltal));
+console.log(tentamen(medeltal)+" medeltal");
 
 
 
