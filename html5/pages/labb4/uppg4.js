@@ -63,5 +63,3 @@ switch (anvVal) {
     default:
 
 }
-
-

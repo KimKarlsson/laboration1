@@ -14,24 +14,24 @@ string = prompt("skriv en text");
 
 
 for (var i = 0; i < string.length; i++) {
-     console.log(string[i]);
+    console.log(string[i]);
 
     if (string[i] === "a") {
         //console.log("funk");
         string = string.replace("a", "#");
-       //console.log(hitA);
+        //console.log(hitA);
         /*
         // If we find it, add characters up to
         // the length of my name to the array
 		for(var j = i; j < (string.length + i); j++) {
 			hitA.push(string[j]); 
 		*/
-    } 
+    }
     if (string[i] === "A") {
         string = string.replace("A", "#");
-      
-    } 
-}   
+
+    }
+}
 
 
 console.log(string.toLowerCase());
@@ -55,4 +55,3 @@ konsolen.
 ---------------------------------------------------------------------------
 
 */
-
