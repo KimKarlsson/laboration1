@@ -15,19 +15,33 @@ cell[2][2] = ”7714”;
 */
 
 var myArray = [
-    ["förnamn ", "efternamn ", "telefon "],
+    ["Förnamn", " Efternamn", " Telefon"],
     ["Haris", "Kljajic", "7716"],
     ["Mats", "Loock", "7714"]
 ];
 
+/*var arr = [["","",""],["","",""],["","",""]];*/
+
 //document.write(myArray);
 tableCreate(myArray);
 
-
-function tableCreate(myArray){
-
+function tableCreate(table){
+//var result += ;  
 document.write("<table>");
-document.write("<th>" + myArray[0][0]+ "</th>");
-document.write("<th><tr>"+ myArray[1][0] +"</tr></th>");
+document.write("<th>");
+document.write("<tr>");
+for (var i = 0; i < myArray.length; i++){
+//document.write(myArray[0]);
+    for (var j = 0; j < myArray[i].length; j++){
+    if( i === 0){
+        document.write( myArray[i][j]);
+        console.log(myArray[i][j]);
+    }else{
+  //      document.write("<tbody>"+"</tr>"+(myArray[j][j])+"</th>"+"</tbody>");
+    }
+    document.write("</tr>");
+    document.write("</th>");
+    document.write("</theader>");
 document.write("</table>");
-}
+
+}}}
