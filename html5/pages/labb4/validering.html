@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h2>Validering</h2>
+    <ul>
+        <li><a href="../../../index.html">Start</a></li>
+        <li><a href="../labbjs.html">Tillbaka</a></li>
+    </ul>
+    <div>
+        <h3>Fyll i din betalningsplan</h3>
+        <h4>OBS, detta är ett påhittad formulär.</h4>
+        <form method="post" action="https://laboration1-kimkarlsson.c9.io/html5/pages/labb4/sale.html" id="minform">
+            <div>
+                <label>Förnamn: </label>
+            </div>
+            <input type="text" value="Skriv ditt förnamn här" class="text" name="firstname" size="20" />
+
+            <div>
+                <label>Efternamn:</label>
+            </div>
+            <input type="text" value="Skriv ditt efernamn här" class="text" name="lastname" size="20" />
+
+            <div>
+                <label>Postnummer:</label>
+            </div>
+            <input type="text" value="12323" class="text" name="postnumber" size="20" />
+
+            <div>
+                <label>E-post:</label>
+            </div>
+            <input type="email" value="exempel@exempel.com" class="text" name="email" size="20" />
+
+            <div>
+                <label>Prisnivå:</label>
+                    <select name="errand">
+                        <option value="low">låg</option>
+                        <option value="high">Hur</option>
+                        <option value="middle">När</option>
+                    </select>
+            
+            </div>
+
+            <input type="submit" value="Skicka fråga">
+        </form>
+    </div>
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="validering.js"></script>
+</body>
+
+</html>
