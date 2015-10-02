@@ -24,7 +24,7 @@ function tentamen(medeltal) {
     return svar;
 
 }
-console.log(tentamen(medeltal)+" medeltal");
+console.log(tentamen(medeltal)+" medeltal, högsta, lägsta");
 
 
 
