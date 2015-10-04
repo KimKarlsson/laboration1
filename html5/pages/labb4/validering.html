@@ -5,6 +5,8 @@
 <head>
     <title>Title</title>
     <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="validering.css" />
 </head>
 
 <body>
@@ -16,42 +18,41 @@
     <div>
         <h3>Fyll i din betalningsplan</h3>
         <h4>OBS, detta är ett påhittad formulär.</h4>
-        <form method="post" action="https://laboration1-kimkarlsson.c9.io/html5/pages/labb4/sale.html" id="minform">
+        <form id="form" method="post" action="https://laboration1-kimkarlsson.c9.io/html5/pages/labb4/sale.html">
             <div>
-                <label>Förnamn: </label>
+                <label for="form_fname">Förnamn:</label>
+                <input type="text" id="form_fname" name="fname" />
+                <span class="error">Obligatorisk uppgift</span>
             </div>
-            <input type="text" value="Skriv ditt förnamn här" class="text" name="firstname" size="20" />
-
             <div>
-                <label>Efternamn:</label>
+                <label for="form_lname">Efternamn:</label>
+                <input type="text" id="form_lname" name="lname" />
+                <span class="error">Obligatorisk uppgift</span>
             </div>
-            <input type="text" value="Skriv ditt efernamn här" class="text" name="lastname" size="20" />
-
             <div>
-                <label>Postnummer:</label>
+                <label for="form_number">Postnummer:</label>
+                <input type="text" id="form_number" name="number" />
+                <span class="error">Obligatorisk uppgift</span>
             </div>
-            <input type="text" value="12323" class="text" name="postnumber" size="20" />
-
             <div>
-                <label>E-post:</label>
+                <label for="form_email">E-post:</label>
+                <input type="email" id="form_email" name="email" />
+                <span class="error">Obligatorisk uppgift</span>
             </div>
-            <input type="email" value="exempel@exempel.com" class="text" name="email" size="20" />
-
             <div>
-                <label>Prisnivå:</label>
-                    <select name="errand">
-                        <option value="low">låg</option>
-                        <option value="high">Hur</option>
-                        <option value="middle">När</option>
-                    </select>
-            
+                <label for="form_list">Prisnivå:</label>
+                <select name="price" id="price">
+                    <option value="low">Låg</option>
+                    <option value="high">Hög</option>
+                    <option value="middle">Medel</option>
+                </select>
             </div>
-
-            <input type="submit" value="Skicka fråga">
+            <div id="form_submit">
+                <button type="submit">Genomför köp</button>
+            </div>
         </form>
     </div>
     <script type="text/javascript" src="../../js/jquery.js"></script>
-    <script type="text/javascript" src="../../js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="validering.js"></script>
 </body>
 

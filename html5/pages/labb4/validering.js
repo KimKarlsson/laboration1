@@ -1,53 +1,72 @@
-$(document).ready(function($) {
-    JQUERY4U.UTIL.setupFormValidation();
-    console.log("");
-});
+$(document).ready(function() {
+    //förnamn
+    $('#form_fname').on('input', function() {});
+    // error vid blankt 
+    $('#form_fname').on('input', function() {
+        var input = $(this);
+        var is_fname = input.val();
+        if (is_fname) {
+            input.removeClass("invalid").addClass("valid");
+        }
+        else {
+            input.removeClass("valid").addClass("invalid");
+        }
+    });
+    //efternamn
+    $('#form_lname').on('input', function() {});
+    // error blank
+    $('#form_lname').on('input', function() {
+        var input = $(this);
+        var is_lname = input.val();
+        if (is_lname) {
+            input.removeClass("invalid").addClass("valid");
+        }
+        else {
+            input.removeClass("valid").addClass("invalid");
+        }
+    });
 
+    /*    function valid_postcode(postcode) {
+        postcode = postcode.replace(/\s/g, "");
+        var regex = /^[A-Z]{1,2}[0-9]{1,2} ?[0-9][A-Z]{2}$/i;
+        return regex.test(postcode);
+    */
+    //yourTextArea.value = yourTextArea.value.replace(/\$\$(.+?)\$\$/, '<i>$1</i>')
+    //str.replace(/\${2}(.*?)\${2}/g, "<I>$1</I>");
 
-var JQUERY4U = {};
+    // error vid blank
+    $('#form_number').on('input', function() {
+        var input = $(this);
+      //  console.log(input); //#form_number
+    //  if (input ="/\b(\d{5}|\d{3}(-|\s)\d{2}|(SE|se)\d{5}|(SE|se)\d{3}(-|\s)\d{2}|(SE|se)\d{5}|(SE|se)\d{2}(-|\s)\d{3})\b/"){
+    //  input.replace(/\b(\d{5}|\d{3}(-|\s)\d{2}|(SE|se)\d{5}|(SE|se)\d{3}(-|\s)\d{2}|(SE|se)\d{5}|(SE|se)\d{2}(-|\s)\d{3})\b/, /\b\d{5}\b/);
+     // }
+        //var re = /\b(\d{5}|\d{3}(-|\s)\d{2}|(SE|se)\d{5}|(SE|se)\d{3}(-|\s)\d{2}|(SE|se)\d{5}|(SE|se)\d{2}(-|\s)\d{3})\b/;
+        var re = /\b\d{5}\b/;
+        var is_number = re.test(input.val());
+        if (is_number) {
+            input.removeClass("invalid").addClass("valid");
+        }
+        else {
+            input.removeClass("valid").addClass("invalid");
+        }
+    });
+    //email
+    // måste vara email
+    $('#form_email').on('input', function() {
+        var input = $(this);
+        var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var is_email = re.test(input.val());
+        if (is_email) {
+            input.removeClass("invalid").addClass("valid");
+        }
+        else {
+            input.removeClass("valid").addClass("invalid");
+        }
+    });
+    //submit
+  $("#form_submit button").click(function(event) {});
+   
+   
+    });
 
-JQUERY4U.UTIL = {
-    setupFormValidation: function() {
-        $.validator.addMethod(
-            "regex",
-            function(value, element, regexp) {
-                var re = new RegExp(regexp);
-                //lägger in nytt regexp obj för att kunna ta ur siffrorna 
-                var nuSak = new RegExp("\\d{5}");
-                console.log(value);
-                //Hittar och ersätter värde postnummer till rätt
-                value = nuSak.exec(value);
-                return this.optional(element) || re.test(value);
-            },
-            "Please check your input."
-        );
-        //form validation rules
-        $("#minform").validate({
-            rules: {
-                firstname: "required",
-                lastname: "required",
-                postnumber: {
-                    regex: "\\b(\\d{5}|\\d{3}(-|\\s)\\d{2}|(SE|se)\\d{5}|(SE|se)\\d{3}(-|\\s)\\d{2}|(SE|se)\\d{5}|(SE|se)\\d{2}(-|\\s)\\d{3})\\b"
-                },
-                email: {
-                    required: true,
-                    email: true
-                },
-            },
-            messages: {
-                firstname: "Skriv in ditt förnamn",
-                lastname: "Skriv in ditt efternamn",
-                postnumber: "Skriv in ditt postnummer XXXXX",
-                email: "Ange en korrekt mail-adress",
-            },
-            submitHandler: function(form) {
-                form.submit();
-            }
-        });
-    }
-};
-
-/* regex postnummer
-\b(\d{5}|\d{3}(-|\s)\d{2}|(SE|se)\d{5}|(SE|se)\d{3}(-|\s)\d{2}|(SE|se)\d{5}|(SE|se)\d{2}(-|\s)\d{3})\b
-\\b(\\d{5}|\\d{3}(-|\\s)\\d{2}|(SE|se)\\d{5}|(SE|se)\\d{3}(-|\\s)\\d{2}|(SE|se)\\d{5}|(SE|se)\\d{2}(-|\\s)\\d{3})\\b
-*/
