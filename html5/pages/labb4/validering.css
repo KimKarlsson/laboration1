@@ -23,6 +23,7 @@ textarea{
 	color: red;
 	margin-left: 10px;
 }
+
 input.invalid, textarea.invalid{
 	border: 2px solid red;
 }
