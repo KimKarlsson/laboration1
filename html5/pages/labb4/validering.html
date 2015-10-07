@@ -18,12 +18,13 @@
         <h3>Fyll i din betalningsplan</h3>
         <h4>OBS, detta är ett påhittad formulär.</h4>
         <form id="form" method="post" action="https://laboration1-kimkarlsson.c9.io/html5/pages/labb4/sale.html">
-            <!-- Test -->
-            <div>
+            <!-- Test <-->
+            <!--https://laboration1-kimkarlsson.c9.io/html5/pages/labb4/sale.html-->
+                <div>
                 <label for="form_test">test:</label>
                 <input type="text" id="form_test" name="test"></input>
                 <span class="error">Obligatorisk uppgift</span>
-            </div>
+            </div> 
             <!-- Test slutar här -->
             <div>
                 <label for="form_fname">Förnamn:</label>
@@ -45,19 +46,28 @@
                 <input type="email" id="form_email" name="email" />
                 <span class="error">Obligatorisk uppgift</span>
             </div>
+           
+          
             <div>
                 <label for="form_price">Prisnivå:</label>
-                <select name="price" id="price">
-                    <option value="low">Låg</option>
+               <!-- <input type="list" id="form_list" name="list" /> -->
+                <select id="form_price" name="price">
+                    <option value="null" selected >Välj en prismodell</option>
+                    <option value="low" >Låg</option>
                     <option value="high">Hög</option>
                     <option value="middle">Medel</option>
-                </select>
+                    <span class="error">null</span>
+                </select> 
+              <!--   <span class="error">Obligatorisk uppgift</span>  -->
             </div>
+            
             <div id="form_submit">
-                <button type="submit">Genomför köp</button>
+                <button type="submit">Submit</button>
             </div>
         </form>
     </div>
+
+
     <script type="text/javascript" src="../../js/jquery.js"></script>
     <script type="text/javascript" src="validering.js"></script>
 </body>
