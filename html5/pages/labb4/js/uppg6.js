@@ -7,6 +7,7 @@ function triangel() {
     var c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
     // skriv ut c, inuti funktionen
     console.log(Math.round(c));
+    alert("Hypotenusan är: " + Math.round(c));
 }
 //kör funktionen
 triangel();
