@@ -34,7 +34,7 @@ label {
     background:rgba(0,0,0,0.75);
 }
 /* bagrund och skugga */
-.popup-inner {
+.overlay {
     max-width:700px;
     width:90%;
     padding:40px;
@@ -48,3 +48,6 @@ label {
     background:#fff;
 }
  
+
+/*hemmafix*/
+

@@ -47,27 +47,25 @@
                 <option value="middle">Medel</option>
                 <span class="error">null</span>
             </select>
-            <!-- <span class="error">Välj en prismodell</span> -->
         </div>
         <div>
-            <button class="btn" id="contact" data-popup-open="popup-1" href="#">Genomför köp</button>
+            <button id="contact" href="#">Genomför köp</button>
         </div>
     </form>
     <form id="form" method="post" action="https://laboration1-kimkarlsson.c9.io/html5/pages/labb4/html/sale.html">
         <!--öpnnar popup -->
-        <div id="popupLogin" class="popup" data-popup="popup-1">
-            <!--döljer pop -->
-            <div class="popup-inner">
+        <div id="popupLogin" class="popup">
+            <div class="overlay">
                 <h2>Stämmer dina uppgifter?</h2>
                 <p> <span>Förnamn: </span><span id="firstname"></span></p>
                 <p> <span>Efternamn: </span><span id="secnamn"></span></p>
                 <p> <span>Postnummer: </span><span id="zipcode"></span></p>
                 <p> <span>e-post: </span><span id="email"></span></p>
                 <p> <span>Prismodell: </span><span id="pricemodel"></span></p>
-                <p><a id="popclose" data-popup-close="popup-1" href="#">Ändra</a></p>
-                <div id="form_submit">
+                <p><a href="#" class="close">Ändra</a></p>
+                <p>
                     <button type="submit">Godkänn</button>
-                </div>
+                </p>
             </div>
         </div>
     </form>
